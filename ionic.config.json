@@ -1,5 +1,7 @@
 {
   "name": "falcon-app",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

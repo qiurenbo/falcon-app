@@ -1,0 +1,23 @@
+* {
+  font-family: "Microsoft YaHei" !important;
+}
+ion-card {
+  * {
+    box-sizing: content-box;
+  }
+}
+
+ion-card-title {
+  font-size: 18px;
+  color: var(--ion-color-dark);
+}
+ion-card-subtitle {
+  font-size: 16px;
+  color: var(--ion-color-dark);
+}
+
+.card-content-ios {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ion-color-dark);
+}
