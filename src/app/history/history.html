@@ -5,76 +5,29 @@
 </ion-header>
 
 <ion-content>
-  <div>
-    <ion-button size="small">嘉兴</ion-button>
-    <ion-button size="small">筛选</ion-button>
+  <div class="filter">
+    <ion-button size="small" color="filter">嘉兴</ion-button>
+    <ion-button size="small" color="filter">筛选</ion-button>
   </div>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>
-        <div>台州，黄岩</div>
-        <div>一级主任科员及以下</div>
-      </ion-card-title>
-      <ion-card-subtitle>
-        综合行政执法局直属和派出机构
-      </ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-card-content>
-      <div>
-        <span>缴费人数</span>
-        <span>147</span>
-        <span>难度排名</span>
-        <span>94</span>
-      </div>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
+  <ion-card *ngFor="let item of [].constructor(10);">
     <ion-card-header>
       <ion-card-title>
         <span class="name">一级主任科员及以下</span>
       </ion-card-title>
-      <ion-card-subtitle>
-        综合行政执法局直属和派出机构，台州，黄岩
-      </ion-card-subtitle>
     </ion-card-header>
 
     <ion-card-content>
+      <div><span>综合行政执法局直属和派出机构</span></div>
       <div>
-        <span>缴费人数</span><span>147</span><span>难度</span><span>94.7%</span>
+        <span>招录人数</span><span class="card-content-emphasize">1</span>
       </div>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>
-        <span class="name">一级主任科员及以下</span>
-      </ion-card-title>
-      <ion-card-subtitle>
-        综合行政执法局直属和派出机构，台州，黄岩
-      </ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-card-content>
       <div>
-        <span>缴费人数</span><span>147</span><span>难度</span><span>94.7%</span>
+        <span>缴费人数</span><span class="card-content-emphasize">147</span>
       </div>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>
-        <span class="name">一级主任科员及以下</span>
-      </ion-card-title>
-      <ion-card-subtitle>
-        综合行政执法局直属和派出机构，台州，黄岩
-      </ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-card-content>
       <div>
-        <span>缴费人数</span><span>147</span><span>难度</span><span>94.7%</span>
+        <span>难度排名</span
+        ><span class="”card-content-emphasize“">121（2019，全省）</span>
       </div>
     </ion-card-content>
   </ion-card>

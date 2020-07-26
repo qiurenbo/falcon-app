@@ -1,11 +1,16 @@
 ion-card {
   --background: transparent;
 }
+ion-content {
+  .filter {
+    padding: 20px 20px 0 20px;
+  }
+  ion-card-content {
+    height: 120px;
+    padding-top: 0px;
 
-// ion-card-title {
-// }
-// ion-card-content {
-//   span {
-//     margin-right: 10px;
-//   }
-// }
+    span + span {
+      padding-left: 10px;
+    }
+  }
+}

@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "xcode":"ionic capacitor open ios"
+    "xcode": "ionic capacitor run ios -l --external"
   },
   "private": true,
   "dependencies": {
