@@ -1,0 +1,11 @@
+div {
+  border: solid 1px var(--chip-card-border-color);
+  &:hover {
+    border: solid 1px var(--chip-card-border-hover-color);
+  }
+  text-align: center;
+}
+.chip-card-medium {
+  width: 100px;
+  height: 35px;
+}

@@ -1,14 +1,15 @@
-import { Component, OnInit, Input } from "@angular/core";
-
+import { Component, OnInit, Input, ViewChild, ElementRef } from "@angular/core";
+export type ChipType = "medium" | "small" | "large" | null;
 @Component({
   selector: "app-chip-card",
   templateUrl: "./chip-card.component.html",
-  styleUrls: ["./chip-card.component.css"],
+  styleUrls: ["./chip-card.component.scss"],
 })
 export class ChipCardComponent implements OnInit {
   constructor() {}
 
   @Input()
-  title: string;
+  size: ChipType = "medium";
+
   ngOnInit() {}
 }

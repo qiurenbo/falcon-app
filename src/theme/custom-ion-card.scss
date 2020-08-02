@@ -1,0 +1,29 @@
+/* card */
+ion-card {
+  box-sizing: content-box;
+
+  ion-card-title {
+    font-size: var(--font-size-large);
+    color: var(--card-title-color);
+  }
+
+  ion-card-subtitle {
+    font-size: var(--font-size-medium);
+    color: var(--card-subtitle-color);
+  }
+
+  .card-content-ios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    font-size: var(--font-size-medium);
+    font-weight: 700;
+
+    color: var(--card-content-ios-color);
+
+    .card-content-emphasize {
+      color: var(--ion-color-danger-tint);
+    }
+  }
+}
