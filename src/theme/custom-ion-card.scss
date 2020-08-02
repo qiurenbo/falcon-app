@@ -4,12 +4,12 @@ ion-card {
 
   ion-card-title {
     font-size: var(--font-size-large);
-    color: var(--card-title-color);
+    color: var(--ion-color-dark);
   }
 
   ion-card-subtitle {
     font-size: var(--font-size-medium);
-    color: var(--card-subtitle-color);
+    color: var(--ion-color-dark);
   }
 
   .card-content-ios {
@@ -20,7 +20,7 @@ ion-card {
     font-size: var(--font-size-medium);
     font-weight: 700;
 
-    color: var(--card-content-ios-color);
+    color: var(--ion-color-medium-contrast);
 
     .card-content-emphasize {
       color: var(--ion-color-danger-tint);

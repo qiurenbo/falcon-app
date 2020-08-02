@@ -1,11 +1,22 @@
 div {
-  border: solid 1px var(--chip-card-border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-small);
+  border: solid 1px var(--ion-color-medium);
+  color: var(--ion-color-medium-contrast);
+  background-color: var(--ion-color-medium);
+  font-weight: var(--font-weight-normal);
+
   &:hover {
-    border: solid 1px var(--chip-card-border-hover-color);
+    border: solid 1px var(--ion-color-primary);
+    color: var(--ion-color-primary);
+    background-color: var(--ion-color-primary-tint);
   }
   text-align: center;
 }
+
 .chip-card-medium {
-  width: 100px;
+  width: 90px;
   height: 35px;
 }
