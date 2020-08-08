@@ -6,9 +6,9 @@ ion-card-content {
   align-items: space-between;
 
   /**
-  * Giving wrapped flexbox items vertical spacing.
-  * https://stackoverflow.com/questions/35578404/giving-wrapped-flexbox-items-vertical-spacing
-  */
+    * Giving wrapped flexbox items vertical spacing.
+    * https://stackoverflow.com/questions/35578404/giving-wrapped-flexbox-items-vertical-spacing
+    */
   margin: -10px 0 0 0;
   > * {
     margin-top: 10px;

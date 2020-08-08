@@ -6,13 +6,21 @@
 
 <ion-content>
   <div class="filter">
-    <ion-button size="small" color="medium">嘉兴</ion-button>
-    <ion-button size="small" color="medium" (click)="presentFilter()">
+    <ion-button size="small" color="medium" (click)="presentYearFilter()">
+      年份
+    </ion-button>
+    <ion-button size="small" color="medium" (click)="presentPositionFilter()">
+      嘉兴
+    </ion-button>
+    <ion-button size="small" color="medium" (click)="presentPositionFilter()">
       筛选
     </ion-button>
   </div>
 
-  <ion-card *ngFor="let item of [].constructor(10);">
+  <ion-card
+    *ngFor="let item of [].constructor(10);"
+    (click)="navigateToDetail()"
+  >
     <ion-card-header>
       <ion-card-title>
         <span class="name">一级主任科员及以下</span>
@@ -25,11 +33,17 @@
         <span>招录人数</span><span class="card-content-emphasize">1</span>
       </div>
       <div>
+        <span>招录人数</span><span class="card-content-emphasize">1</span>
+      </div>
+      <div>
         <span>缴费人数</span><span class="card-content-emphasize">147</span>
       </div>
       <div>
         <span>难度排名</span
         ><span class="”card-content-emphasize“">121（2019，全省）</span>
+      </div>
+      <div>
+        <ion-badge color="primary">社区干部</ion-badge>
       </div>
     </ion-card-content>
   </ion-card>

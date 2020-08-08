@@ -6,11 +6,15 @@ ion-content {
     padding: 20px 20px 0 20px;
   }
   ion-card-content {
-    height: 120px;
+    height: 140px;
     padding-top: 0px;
 
-    span + span {
-      padding-left: 10px;
+    span {
+      padding-right: 10px;
+    }
+
+    div {
+      margin-bottom: 3px;
     }
   }
 }

@@ -4,10 +4,10 @@ import { HistoryComponent } from "./history";
 import { HistoryRoutingModule } from "./history-routing.module";
 import { IonicModule } from "@ionic/angular";
 import { SharedModule } from "../shared/shared.module";
-import { HistoryFilterComponent } from "../history-filter/history-filter.component";
+import { PositionComponent } from "../position/position.component";
 
 @NgModule({
-  declarations: [HistoryComponent, HistoryFilterComponent],
+  declarations: [HistoryComponent, PositionComponent],
   imports: [CommonModule, HistoryRoutingModule, IonicModule, SharedModule],
   exports: [],
   providers: [],

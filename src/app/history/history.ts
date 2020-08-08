@@ -1,6 +1,8 @@
 import { Component, OnInit } from "@angular/core";
-import { HistoryFilterComponent } from "../history-filter/history-filter.component";
 import { ModalController, IonRouterOutlet } from "@ionic/angular";
+import { PositionFilterComponent } from "../shared/position-filter/position-filter.component";
+import { YearFilterComponent } from "../shared/year-filter/year-filter.component";
+import { Router } from "@angular/router";
 @Component({
   selector: "falcon-history",
   templateUrl: "./history.html",
@@ -9,17 +11,31 @@ import { ModalController, IonRouterOutlet } from "@ionic/angular";
 export class HistoryComponent implements OnInit {
   constructor(
     private modalController: ModalController,
-    private routerOutlet: IonRouterOutlet
+    private routerOutlet: IonRouterOutlet,
+    private router: Router
   ) {}
 
   ngOnInit(): void {}
 
-  async presentFilter() {
+  async presentPositionFilter() {
     const modal = await this.modalController.create({
-      component: HistoryFilterComponent,
+      component: PositionFilterComponent,
       swipeToClose: true,
       presentingElement: this.routerOutlet.nativeEl,
     });
     return await modal.present();
+  }
+
+  async presentYearFilter() {
+    const modal = await this.modalController.create({
+      component: YearFilterComponent,
+      swipeToClose: true,
+      presentingElement: this.routerOutlet.nativeEl,
+    });
+    return await modal.present();
+  }
+
+  navigateToDetail() {
+    this.router.navigateByUrl("tabs/history/position");
   }
 }
