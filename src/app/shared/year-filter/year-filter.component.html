@@ -1,15 +1,7 @@
 <ion-header>
   <ion-toolbar><ion-title>年份</ion-title></ion-toolbar>
 </ion-header>
+
 <ion-content>
-  <ion-card>
-    <ion-card-content>
-      <app-chip-card size="medium">2018</app-chip-card>
-      <app-chip-card size="medium">2019</app-chip-card>
-      <app-chip-card size="medium">2020</app-chip-card>
-      <app-chip-card size="medium">2021</app-chip-card>
-      <app-chip-card size="medium">2022</app-chip-card>
-      <app-chip-card size="medium">2023</app-chip-card>
-    </ion-card-content>
-  </ion-card>
+  <app-filter [title]="'年份'" [items]="items"></app-filter>
 </ion-content>

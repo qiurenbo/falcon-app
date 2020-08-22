@@ -1,59 +1,7 @@
 <ion-header>
-  <ion-toolbar><ion-title>过滤</ion-title></ion-toolbar>
+  <ion-toolbar><ion-title>区域</ion-title></ion-toolbar>
 </ion-header>
+
 <ion-content>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>
-        <span>学历</span>
-      </ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <app-chip-card size="medium">不限</app-chip-card>
-      <app-chip-card size="medium">大专</app-chip-card>
-      <app-chip-card size="medium">本科</app-chip-card>
-      <app-chip-card size="medium">硕士</app-chip-card>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>
-        <span>性别</span>
-      </ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <app-chip-card size="medium">不限</app-chip-card>
-      <app-chip-card size="medium">男</app-chip-card>
-      <app-chip-card size="medium">女</app-chip-card>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>
-        <span>特殊经历</span>
-      </ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <app-chip-card size="medium">三支一扶</app-chip-card>
-      <app-chip-card size="medium">社区干部</app-chip-card>
-      <app-chip-card size="medium">辅警</app-chip-card>
-      <app-chip-card size="medium">村官</app-chip-card>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>
-        <span>岗位类别</span>
-      </ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <app-chip-card size="medium">街道</app-chip-card>
-      <app-chip-card size="medium">法院</app-chip-card>
-      <app-chip-card size="medium">公安</app-chip-card>
-      <app-chip-card size="medium">检察院</app-chip-card>
-    </ion-card-content>
-  </ion-card>
+  <app-filter [title]="'嘉兴'" [items]="items"></app-filter>
 </ion-content>

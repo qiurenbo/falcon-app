@@ -3,6 +3,7 @@ import { ModalController, IonRouterOutlet } from "@ionic/angular";
 import { PositionFilterComponent } from "../shared/position-filter/position-filter.component";
 import { YearFilterComponent } from "../shared/year-filter/year-filter.component";
 import { Router } from "@angular/router";
+import { OtherFilterComponent } from "../shared/other-filter/other-filter.component";
 @Component({
   selector: "falcon-history",
   templateUrl: "./history.html",
@@ -29,6 +30,15 @@ export class HistoryComponent implements OnInit {
   async presentYearFilter() {
     const modal = await this.modalController.create({
       component: YearFilterComponent,
+      swipeToClose: true,
+      presentingElement: this.routerOutlet.nativeEl,
+    });
+    return await modal.present();
+  }
+
+  async presentOtherFilter() {
+    const modal = await this.modalController.create({
+      component: OtherFilterComponent,
       swipeToClose: true,
       presentingElement: this.routerOutlet.nativeEl,
     });
