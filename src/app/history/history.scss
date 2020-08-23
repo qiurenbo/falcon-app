@@ -1,20 +1,31 @@
-ion-card {
-  --background: transparent;
+ion-toolbar {
+  padding: 0 20px 0 20px !important;
 }
 ion-content {
-  .filter {
+  .container {
     padding: 20px 20px 0 20px;
-  }
-  ion-card-content {
-    height: 140px;
-    padding-top: 0px;
 
-    span {
-      padding-right: 10px;
+    .filter {
+      padding: 0px 0px 20px 0px;
     }
 
-    div {
-      margin-bottom: 3px;
+    ion-card {
+      --background: transparent;
+      margin: 0 0 20px 0 !important;
+      ion-card-content {
+        height: 200px;
+        padding-top: 0px;
+
+        display: flex;
+        justify-content: space-around;
+
+        .line {
+          margin-bottom: 3px;
+          .desc {
+            padding-right: 10px;
+          }
+        }
+      }
     }
   }
 }
